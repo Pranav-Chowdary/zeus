@@ -1,0 +1,158 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #0073b1, #00c6ff);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main Container */
+.container {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+/* Header Styling */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0073b1;
+}
+
+/* Input Fields, Textareas, Select, and Buttons */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none; /* Prevent resizing */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0073b1;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #005f8d;
+    transform: translateY(-2px);
+}
+
+a {
+    color: #0073b1;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Fieldset and Legends for Grouping */
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+legend {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+    padding: 0 10px;
+}
+
+/* Role Selection Buttons */
+.role-selection {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.role-button {
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.role-button:hover {
+    background-color: #005f8d;
+    transform: scale(1.05);
+}
+
+/* Animation-ready for GSAP */
+.animated-title {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.animated-submit {
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+/* Add styling for PAN verification */
+.hidden {
+    display: none;
+}
+
+.locked {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.verify-btn {
+    padding: 10px;
+    background-color: #0073b1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.verify-btn:hover {
+    background-color: #005f8d;
+}
+
+#verificationStatus {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Job Portal</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo" id="logo">
+        <span class="logo-part" id="logoLeft">Ze</span>
+        <span class="sparkle-container" id="sparkleLeft"></span>
+        <span class="logo-part" id="logoRight">us</span>
+        <span class="sparkle-container" id="sparkleRight"></span> 
+      </div>
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#">My Network</a></li>
+        <li class="nav-item"><a href="#">Jobs</a></li>
+        <li class="nav-item"><a href="#">Messaging</a></li>
+        <li class="nav-item"><a href="#">Notifications</a></li>
+        <li class="profile">
+          <a href="#" id="profileDropdown">Me <span class="arrow">&#9662;</span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" id="viewProfile">View Profile</a></li>
+            <li><a href="#" id="settings">Settings</a></li>
+            <li><a href="#" id="help">Help</a></li>
+            <li><a href="#" id="signOut">Sign Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <select id="userType" name="userType" required>
+      <option value="" disabled selected>Select your role</option>
+      <option value="jobSeeker">Job Seeker</option>
+      <option value="recruiter">Recruiter</option>
+  </select>
+  
+  </header>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="script.js"></script>
+  <a href="logout.html">Logout</a>
+</body>
+</html>
